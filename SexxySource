@@ -1,0 +1,235 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88 
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
+]=]
+
+-- Instances: 16 | Scripts: 1 | Modules: 0
+local G2L = {};
+
+-- Workspace.TransparentHub
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[TransparentHub]];
+
+-- Workspace.TransparentHub.TransparentHubFrame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2"]["Size"] = UDim2.new(0, 387, 0, 185);
+G2L["2"]["Position"] = UDim2.new(0.5, 0, 0.49941176176071167, 0);
+G2L["2"]["Name"] = [[TransparentHubFrame]];
+
+-- Workspace.TransparentHub.TransparentHubFrame.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+
+
+-- Workspace.TransparentHub.TransparentHubFrame.UIGradient
+G2L["4"] = Instance.new("UIGradient", G2L["2"]);
+G2L["4"]["Rotation"] = 40;
+G2L["4"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(31, 31, 31)),ColorSequenceKeypoint.new(0.469, Color3.fromRGB(39, 39, 39)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(31, 31, 31))};
+
+-- Workspace.TransparentHub.TransparentHubFrame.LocalScript
+G2L["5"] = Instance.new("LocalScript", G2L["2"]);
+
+
+-- Workspace.TransparentHub.TransparentHubFrame.Text
+G2L["6"] = Instance.new("TextLabel", G2L["2"]);
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["TextSize"] = 25;
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["Size"] = UDim2.new(0, 381, 0, 159);
+G2L["6"]["Text"] = [[]];
+G2L["6"]["Name"] = [[Text]];
+G2L["6"]["Font"] = Enum.Font.SourceSansLight;
+G2L["6"]["BackgroundTransparency"] = 1;
+G2L["6"]["Position"] = UDim2.new(0.01550387591123581, 0, -0.0027027027681469917, 0);
+
+-- Workspace.TransparentHub.TransparentHubFrame.Buttons
+G2L["7"] = Instance.new("Frame", G2L["2"]);
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["BackgroundTransparency"] = 1;
+G2L["7"]["Size"] = UDim2.new(0, 387, 0, 35);
+G2L["7"]["Position"] = UDim2.new(0, 0, 0.7567567825317383, 0);
+G2L["7"]["Name"] = [[Buttons]];
+
+-- Workspace.TransparentHub.TransparentHubFrame.Buttons.UIListLayout
+G2L["8"] = Instance.new("UIListLayout", G2L["7"]);
+G2L["8"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
+G2L["8"]["FillDirection"] = Enum.FillDirection.Horizontal;
+G2L["8"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["8"]["Padding"] = UDim.new(0, 10);
+G2L["8"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- Workspace.TransparentHub.TransparentHubFrame.Buttons.Next
+G2L["9"] = Instance.new("TextButton", G2L["7"]);
+G2L["9"]["TextSize"] = 34;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["Visible"] = false;
+G2L["9"]["Size"] = UDim2.new(0, 155, 0, 35);
+G2L["9"]["Name"] = [[Next]];
+G2L["9"]["Text"] = [[Next]];
+G2L["9"]["Font"] = Enum.Font.SourceSansLight;
+G2L["9"]["Position"] = UDim2.new(0.03359173238277435, 0, 0.8247104287147522, 0);
+
+-- Workspace.TransparentHub.TransparentHubFrame.Buttons.Next.UICorner
+G2L["a"] = Instance.new("UICorner", G2L["9"]);
+
+
+-- Workspace.TransparentHub.TransparentHubFrame.Buttons.Yes
+G2L["b"] = Instance.new("TextButton", G2L["7"]);
+G2L["b"]["TextSize"] = 34;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["Size"] = UDim2.new(0, 155, 0, 35);
+G2L["b"]["Name"] = [[Yes]];
+G2L["b"]["Text"] = [[Yes]];
+G2L["b"]["Font"] = Enum.Font.SourceSansLight;
+G2L["b"]["Position"] = UDim2.new(0.03359173238277435, 0, 0.8247104287147522, 0);
+
+-- Workspace.TransparentHub.TransparentHubFrame.Buttons.Yes.UICorner
+G2L["c"] = Instance.new("UICorner", G2L["b"]);
+
+
+-- Workspace.TransparentHub.TransparentHubFrame.Buttons.No
+G2L["d"] = Instance.new("TextButton", G2L["7"]);
+G2L["d"]["TextSize"] = 34;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["Size"] = UDim2.new(0, 155, 0, 35);
+G2L["d"]["Name"] = [[No]];
+G2L["d"]["Text"] = [[No]];
+G2L["d"]["Font"] = Enum.Font.SourceSansLight;
+G2L["d"]["Position"] = UDim2.new(0.5129199028015137, 0, 0, 0);
+
+-- Workspace.TransparentHub.TransparentHubFrame.Buttons.No.UICorner
+G2L["e"] = Instance.new("UICorner", G2L["d"]);
+
+
+-- Workspace.TransparentHub.TransparentHubFrame.Buttons.Stop
+G2L["f"] = Instance.new("TextButton", G2L["7"]);
+G2L["f"]["TextSize"] = 34;
+G2L["f"]["TextTransparency"] = 1;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
+G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["Visible"] = false;
+G2L["f"]["Size"] = UDim2.new(0, 155, 0, 35);
+G2L["f"]["Name"] = [[Stop]];
+G2L["f"]["Text"] = [[Stop]];
+G2L["f"]["Font"] = Enum.Font.SourceSansLight;
+G2L["f"]["Position"] = UDim2.new(0.03359173238277435, 0, 0.8247104287147522, 0);
+G2L["f"]["BackgroundTransparency"] = 1;
+
+-- Workspace.TransparentHub.TransparentHubFrame.Buttons.Stop.UICorner
+G2L["10"] = Instance.new("UICorner", G2L["f"]);
+
+
+-- Workspace.TransparentHub.TransparentHubFrame.LocalScript
+local function C_5()
+local script = G2L["5"];
+	getgenv().farm = false
+	local TS = game:GetService("TweenService")
+	for i,v in pairs(script.Parent.Parent:GetDescendants()) do
+		if v:IsA("GuiObject") then
+			v.BackgroundTransparency = 1
+		end
+	end
+	for i,v in pairs(script.Parent.Parent:GetDescendants()) do
+		if v:IsA("TextButton") then
+			v.TextTransparency = 1
+		end
+	end
+	wait(1)
+	local fade1 = TS:Create(script.Parent, TweenInfo.new(2), {BackgroundTransparency = 0})
+	fade1:Play()
+	wait(2)
+	text = "Do You Want To Load Transparent Hub's Auto Farm? [Meme Sea]"
+	for i = 1, #text do
+		script.Parent.Text.Text = string.sub(text,1,i)
+		wait(0.05)
+	end
+	for i,v in pairs(script.Parent.Parent:GetDescendants()) do
+		if v:IsA("TextButton") then
+			local fade1 = TS:Create(v, TweenInfo.new(1), {BackgroundTransparency = 0})
+			local fade2 = TS:Create(v, TweenInfo.new(1), {TextTransparency = 0})
+			fade1:Play()
+			wait(1)
+			fade2:Play()
+		end
+	end
+	script.Parent.Buttons.Yes.MouseButton1Down:Connect(function()
+		for i,v in pairs(script.Parent.Parent:GetDescendants()) do
+			if v:IsA("TextButton") then
+				local fade1 = TS:Create(v, TweenInfo.new(0.3), {BackgroundTransparency = 1})
+				local fade2 = TS:Create(v, TweenInfo.new(0.3), {TextTransparency = 1})
+				fade2:Play()
+				wait(0.4)
+				fade1:Play()
+				wait(1)
+				v.Visible = false
+				script.Parent.Buttons.No.Visible = false
+			end
+		end
+		getgenv().farm = true
+		text = "Farming, Please Press Stop To Stop The Auto Farm!"
+		for i = 1, #text do
+			script.Parent.Text.Text = string.sub(text,0,i)
+			wait(0.05)
+		end
+		wait(0.3)
+		script.Parent.Buttons.Stop.Visible = true
+		local fade3 = TS:Create(script.Parent.Buttons.Stop, TweenInfo.new(0.3), {BackgroundTransparency = 0})
+		local fade4 = TS:Create(script.Parent.Buttons.Stop, TweenInfo.new(0.3), {TextTransparency = 0})
+		fade3:Play()
+		wait(0.4)
+		fade4:Play()
+		script.Parent.Buttons.Stop.MouseButton1Down:Connect(function()
+			getgenv().farm = false
+			text = "Stoped!"
+			for i = 1, #text do
+				script.Parent.Text.Text = string.sub(text,1,i)
+				wait(0.05)
+			end
+			wait(1)
+			script.Parent.Parent:Destroy()
+		end)
+	end)
+	script.Parent.Buttons.No.MouseButton1Down:Connect(function()
+		getgenv().farm = false
+		text = "No? Ok!"
+		for i = 1, #text do
+			script.Parent.Text.Text = string.sub(text,1,i)
+			wait(0.05)
+		end
+		wait(1)
+		script.Parent.Parent:Destroy()
+	end)
+	
+	spawn(function()
+		while farm == true do
+			wait()
+			if not game.Players.LocalPlayer.Character:FindFirstChild("Combat") then game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack.Combat) end
+			for i = 1,5 do
+				for I,v in pairs(game:GetService("Workspace").Monster:GetChildren()) do
+					if v:FindFirstChild("Head") then
+						local args = {
+							[1] = i,
+							[2] = v.Head.Position
+						}
+	
+						game:GetService("Players").LocalPlayer.Character.Combat.Sword_Client.RemoteEvent:FireServer(unpack(args))
+					end
+				end
+			end
+		end
+	end)
+end;
+task.spawn(C_5);
+
+return G2L["1"], require;
