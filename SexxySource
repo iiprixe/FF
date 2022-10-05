@@ -177,6 +177,24 @@ local script = G2L["5"];
 			end
 		end
 		getgenv().farm = true
+			spawn(function()
+		while farm == true do
+			wait()
+			if not game.Players.LocalPlayer.Character:FindFirstChild("Combat") then game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack.Combat) end
+			for i = 1,5 do
+				for I,v in pairs(game:GetService("Workspace").Monster:GetChildren()) do
+					if v:FindFirstChild("Head") then
+						local args = {
+							[1] = i,
+							[2] = v.Head.Position
+						}
+	
+						game:GetService("Players").LocalPlayer.Character.Combat.Sword_Client.RemoteEvent:FireServer(unpack(args))
+					end
+				end
+			end
+		end
+	end)
 		text = "Farming, Please Press Stop To Stop The Auto Farm!"
 		for i = 1, #text do
 			script.Parent.Text.Text = string.sub(text,0,i)
@@ -209,25 +227,6 @@ local script = G2L["5"];
 		end
 		wait(1)
 		script.Parent.Parent:Destroy()
-	end)
-	
-	spawn(function()
-		while farm == true do
-			wait()
-			if not game.Players.LocalPlayer.Character:FindFirstChild("Combat") then game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack.Combat) end
-			for i = 1,5 do
-				for I,v in pairs(game:GetService("Workspace").Monster:GetChildren()) do
-					if v:FindFirstChild("Head") then
-						local args = {
-							[1] = i,
-							[2] = v.Head.Position
-						}
-	
-						game:GetService("Players").LocalPlayer.Character.Combat.Sword_Client.RemoteEvent:FireServer(unpack(args))
-					end
-				end
-			end
-		end
 	end)
 end;
 task.spawn(C_5);
